@@ -303,6 +303,11 @@ nav:after {
     line-height: 80px;
 }
 
+.view a {
+    text-decoration: none;
+    color: #3381f3;
+}
+
 .btn-view {}
 
 .social a {
@@ -313,6 +318,10 @@ nav:after {
 .bottom {
     text-align: center;
     padding: 10px 0;
+}
+
+.bottom a {
+    color: #3381f3;
 }
 
 #ctt {
@@ -442,12 +451,14 @@ nav:after {
         font-size: .6em;
     }
     .view a {
-        font-size: .8em;
+        font-size: .7em;
     }
     #about-me p {
-        text-align: unset;
+        text-align: justify;
         font-weight: 300;
         font-size: 1em;
+        padding: 0;
+        margin: 0 2em;
     }
     .bottom p {
         font-size: .7em;
