@@ -223,11 +223,36 @@ nav:after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 11rem;
     transition: all 1s;
     opacity: 0;
     visibility: hidden;
     color: #FFF;
+}
+
+.text-pj button {
+    margin-bottom: 3rem;
+    position: absolute;
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
+    padding: .5rem;
+    border-radius: 9rem;
+    background-color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.text-pj button:hover {
+    background-color: rgb(199, 199, 199);
+    color: #FFF;
+}
+
+.text-pj button a {
+    text-decoration: none;
+    color: #666;
 }
 
 .card:hover .text-pj p {
@@ -237,6 +262,11 @@ nav:after {
 
 .card:hover .img-pj img {
     opacity: .3;
+}
+
+.card:hover .text-pj button {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* CERTIFICADOS*/
