@@ -1,0 +1,456 @@
+/*GERAL*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*RESETANDO PADRÕES DOS NAVEGADORES*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+    color: #666;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.black {
+    background-color: #333335;
+}
+
+.black h2 {
+    color: #FFF;
+}
+
+/*HEADER*/
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*HIDE ON DESKTOP*/
+
+.nav-container .btn-menumobile {
+    display: none;
+}
+
+/*NAVBAR*/
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+    margin-top: 15px;
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #666;
+    transition: 0.5s;
+}
+
+.nav-container li a:hover {
+    text-decoration: none;
+    color: #3381f3;
+    transition: 0.5s;
+}
+
+/*BANNER*/
+
+#main-banner {
+    background: url('../img/banner-01.jpeg') no-repeat;
+    background-size: 100%;
+    background-position: 0 55%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.identification-box {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+.identification-box h1 {
+    font-size: 50px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-shadow: 2px 2px #000;
+}
+
+.identification-box p {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+}
+
+.identification-box img {
+    border-radius: 50%;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#about-me p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#about-me a {
+    text-decoration: none;
+    color: #3381f3
+}
+
+/*PROJETOS*/
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin: 10px;
+    position: relative;
+    width: 250px;
+    border-radius: .8rem;
+}
+
+.img-pj {
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+}
+
+.img-pj img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.text-pj {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-pj p {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden;
+    color: #FFF;
+}
+
+.card:hover .text-pj p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover .img-pj img {
+    opacity: .3;
+}
+
+/* CERTIFICADOS*/
+
+.certificate-container ul {
+    margin: 30px 10px;
+    padding: 0;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    position: relative;
+}
+
+.certificate-container ul li {
+    list-style: none;
+    text-align: left;
+    border-bottom: solid 1px #CCC;
+    height: 80px;
+    position: relative;
+}
+
+.certificate-container ul li:last-child {
+    border: none;
+}
+
+/*COMPANY IMG*/
+
+.language-box {
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    padding-left: 1%;
+}
+
+.language-box img {
+    width: 70px;
+    margin-top: 3.5px;
+    margin-left: 20px;
+}
+
+.course-info {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+}
+
+.course-info h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.view {
+    color: #6d6d6d;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    line-height: 80px;
+}
+
+.btn-view {}
+
+.social {
+    margin-top: 50px;
+}
+
+.social a {
+    color: #FFF;
+    padding-left: 5px;
+}
+
+.bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#ctt {
+    padding: 50px 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1024px) {
+    #logo {
+        position: absolute;
+        left: 50px;
+    }
+    .nav-container ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #about-me p {
+        padding: 0 5rem;
+    }
+    .card {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-banner {
+        margin-top: 5.1rem;
+    }
+    .card {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    nav {
+        height: 4em;
+    }
+    #logo {
+        left: 2em;
+        height: 2em;
+        width: 2em;
+        margin-top: 1em;
+    }
+    .btn-menumobile {
+        display: block;
+        font-size: 1.75em;
+        color: #CCC;
+        position: absolute;
+        right: 1.5em;
+        top: .75em;
+    }
+    .nav-container ul {
+        position: relative;
+        top: 4em;
+        height: 3em;
+        line-height: 3em;
+        display: none;
+    }
+    .nav-container ul li {
+        display: block;
+        background-color: #FFF;
+        margin: 0;
+        border-top: 1px solid #CCC;
+    }
+    .nav-container ul li a {
+        font-size: 1em;
+    }
+    .open {
+        display: block !important;
+    }
+    #main-banner {
+        background-size: cover;
+        margin-top: 4em;
+    }
+    .identification-box {
+        padding-top: 5em;
+        padding-bottom: 5em;
+        width: 90%;
+    }
+    .identification-box h1 {
+        font-size: 2.5em;
+    }
+    .identification-box p {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+    .identification-box img {
+        width: 15em;
+        margin-top: 3em;
+    }
+    .language-box img {
+        width: 3em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    .course-info {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: left;
+        position: absolute;
+    }
+    .course-info h3 {
+        font-weight: 300;
+        margin-bottom: 10px;
+        font-size: .9em;
+    }
+    .course-info p {
+        font-weight: bold;
+        font-size: .6em;
+    }
+    .view a {
+        font-size: .8em;
+    }
+    #about-me p {
+        text-align: unset;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
